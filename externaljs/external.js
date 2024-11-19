@@ -1,0 +1,1 @@
+document.write("This is external way to write javascript which will be fetched by src attribut in script tag of html file. ")
