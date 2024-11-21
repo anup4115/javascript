@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i=0;
+        do{
+            if(i==6)
+            break;
+            document.write("<b>Outer do while loop -- </b>"+i+"<br>")
+            i++;
+            var j=0;
+            do{
+                document.write("Inner do while loop --" +j + "<br>")
+                j++;
+            }while(j<5)
+        }while(true)
+    </script>
+</body>
+</html>
