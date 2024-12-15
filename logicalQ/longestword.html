@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string="apple ball cat dog elephant fish icecream joker"
+        function longestword(word){
+            const words=word.split(" ")
+            var maxlength=0
+            for(const word of words){
+                if(word.length>maxlength)
+                maxlength=word.length
+            }
+            return words.filter(word=>word.length===maxlength)
+        }
+        document.write(longestword(string))
+    </script>
+</body>
+</html>
