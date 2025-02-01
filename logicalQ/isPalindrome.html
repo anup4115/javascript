@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string="apple"
+        function isPalindrome(str) {
+        if(str===str.split("").reverse().join("")){
+            return "The string s palindrome"
+        }
+        else{
+            return "Not palindrome"
+        }
+    }
+    document.write(isPalindrome(string))
+    </script>
+</body>
+</html>
