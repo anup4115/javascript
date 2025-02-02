@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Student{
+            constructor(name,address,grade,email){
+                this.name=name,
+                this.address=address,
+                this.grade=grade,
+                this.email=email
+            }
+            show(){
+                document.write(`${this.name} studies in class ${this.grade} lives in ${this.address}. Email: ${this.email} <br>`)
+            }
+        }
+        const student1=new Student("Ram","Bhaktapur",8,"ram12@gmail.com")
+        student1.show()
+        const student2=new Student("Hari","Kathmandu",7,"hari45@gmail.com")
+        student2.show()
+        const student3=new Student("Sita","Lalitpur",9,"sita00@gmail.com")
+        student3.show()
+    </script>
+</body>
+</html>
