@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>inheritance</title>
+<body>
+	<script>
+		class Parent{
+			constructor(){
+				this.show=function(){
+					document.write("Can speak Nepali");
+				};
+			}
+		}
+		class Son extends Parent{
+			show_more=function(){
+				document.write("Can speak English too");
+			};
+		}
+		
+		class Gson extends Son{
+			show_all=function(){
+				document.write("Can speak italian too");
+			};
+		}
+		var s=new Son();
+		s.show();
+		s.show_more();
+		
+		var g=new Gson();
+		g.show();
+		g.show_more();
+		g.show_all();
+		
+	</script>
+</body>
+</head>
+</html>
