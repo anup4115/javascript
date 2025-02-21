@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>simplefunction</title>
+<body>
+	<script>
+	//a variable is assigned to a constructor
+		var laptop=function(model,cp){
+			this.model=model;
+			this.spec='ryzen9';
+			this.bp=80000;
+			this.cp=cp;
+			this.selling_price=function(){
+				return (this.bp+this.cp);
+			};
+			this.data=function(){
+				document.write("Model:"+" "+this.model+"   "+"Total_Price:"+" "+this.selling_price());
+			}
+		};
+		var asus=new laptop("Gaming",80000);
+		asus.data();
+	</script>
+</body>
+</head>
+</html>
