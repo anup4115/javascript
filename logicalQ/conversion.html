@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const temp=parseFloat(prompt("Enter temperature in farenheit: "))
+        function convert_temp(temp){
+            const temp_in_celcius=(temp-32)*(5/9)
+            return temp_in_celcius.toFixed(2)
+        }
+        document.write("Temperature in celcius:  "+convert_temp(temp))
+    </script>
+</body>
+</html>
