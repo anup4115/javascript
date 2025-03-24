@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Father{
+            constructor(name,language){
+                this.name=name,
+                this.language=language
+            }
+        }
+        class Son extends Father{
+            constructor(name,language,extralanguage){
+                super(name,"Nepali")
+                this.extralanguage=extralanguage
+            }
+            speak(){
+                return `Son speaks ${this.language} inherited from Father, also can speaks ${this.extralanguage}`
+            }
+        }
+        let f1=new Father("Ram","Nepali")
+        let s1=new Son("hari","Nepali","hindi")
+        document.write(s1.speak())
+    </script>
+</body>
+</html>
