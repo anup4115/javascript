@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            eat(){
+                console.log("Animal eats")
+            }
+            swim(){
+                console.log("Animal swims")
+            }
+        }
+        class Giraffe extends Animal{
+            swim(){
+                console.log("Giraffe cant swim")
+            }
+        }
+        var g1=new Giraffe()
+        console.log(g1.swim())
+        </script>
+</body>
+</html>
