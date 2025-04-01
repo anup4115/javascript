@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-     <script>
+   <script>
         var person={
             name:"rahul",
             address:"Pokhara",
@@ -14,6 +14,10 @@
         }
         person["this is property"] = "javascript"
         person.age=32
+        const greet=function(){
+            return `${this.name} lives in ${this.address}`
+        }
+        person.fun=greet
     </script>
 </body>
 </html>
