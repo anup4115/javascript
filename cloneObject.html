@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person={
+            name:"Ram",
+            address:"Pokhara",
+            fullname:{
+                first:"Ram",
+                last:"Hari"
+            }
+        }
+        const cloned_object=JSON.parse(JSON.stringify(person))
+        cloned_object.fullname.last="Thapa"
+        //This is deep copy since it copies the whole object's properties including inner nested object
+        //So the changes made in the copied object's nested object's properties does not affect original object, whereas shallow copy does
+    </script>
+</body>
+</html>
