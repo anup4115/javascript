@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person={
+            name:"Ram",
+            address:"Pokhara",
+            fullname:{
+                first:"Ram",
+                last:"Hari"
+            }
+        }
+        const shallow_copied_obj=Object.assign({},person)
+        shallow_copied_obj.name="Sam"
+        shallow_copied_obj.fullname.last="Thapa"
+        //In shallow copy the top level properties of object are cloned but the nested object's properties are copied as reference.
+        //So the changes made in shallow copied object's top level properties does not affect original object properties but
+        //the changes made in nested object does affect original object's nested object properties
+    </script>
+</body>
+</html>
