@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person=Object.create({
+            name:"Ram"
+        });
+        console.log(person.name)
+        delete person.name;
+        console.log(person.name)
+        //Since we created an object with create method so the properties are set to prototype and not in person object itself.
+        //so delete person.name does not affect the property which is inside the prototype.
+    </script>
+</body>
+</html>
