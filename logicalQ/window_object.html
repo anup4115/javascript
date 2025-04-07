@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name="Ram"//when we assign a variable like this it stores to window property
+        const person={
+            age:29,
+            name:"hari",
+            show:()=>{
+                return this.name
+            }
+        }
+        console.log(person.show())
+        //arrow function points to window object not the person object properties
+    </script>
+</body>
+</html>
