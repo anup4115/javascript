@@ -1,0 +1,9 @@
+<script>
+    const arr=[122,42,34,65,789,456,54,78,986]//Given array elements
+    const largest_number=Math.max(...arr);//finding the largest element
+    console.log(largest_number);//loging largest number
+    index=arr.indexOf(largest_number);//finding the index of largest element in the array
+    arr.splice(index,1);//removing an element 
+    const second_largest=Math.max(...arr)//after removing the largest number finding next largest element
+    console.log(second_largest)//loging the largest element from the array
+</script>
