@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>simplefunction</title>
+<body>
+	<script>
+		function mobile(model){
+			this.model=model,
+			this.price=function(){
+				document.write(this.model+ "   " + "Price is Rs.12,000/-");
+			};
+		};
+		var samsung=new mobile('Galaxy');
+		var nokia=new mobile('f13');
+		samsung.price();
+		nokia.price();
+	</script>
+</body>
+</head>
+</html>
