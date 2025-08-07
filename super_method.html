@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>array</title>
+<body>
+	<script>
+		class Mobile{
+			constructor(model){
+				this.model=model;
+				this.show=function(){
+					document.write(this.model+"		"+"Price is Rs.20000"+"<br>");
+				};
+			}
+		}
+		class mb extends Mobile{
+			constructor(model){
+				super(model);
+				this.show_more=function(){document.write("Child");};
+			}
+		}
+		var m=new mb('Samsung');
+		m.show();
+		m.show_more();
+	</script>
+</body>
+</head>
+</html>
