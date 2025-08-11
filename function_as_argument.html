@@ -1,0 +1,8 @@
+<script>
+    function myfunc(callback){
+        return callback()
+    }
+    console.log(myfunc(function callback(){
+        return "Hello"
+    }))
+</script>
