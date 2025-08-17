@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title>closure</title>
+<body>
+	<script>
+	function outer(){
+		var i="I is outer function local variable";
+		document.write(i+"<br>");
+		function inner(){
+			var j="J is inner function local variable which cannot be assigned by outer function";
+			document.write(j+"<br>");
+			document.write(i);
+		}
+		inner();
+	}
+	outer();
+	</script>
+</body>
+</head>
+</html>
