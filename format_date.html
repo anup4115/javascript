@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Format Date</title>
+<body>
+	<script>
+		var gate=new Date();
+		
+		document.write(formatdate(gate));
+		
+		
+		function formatdate(ymd){
+			var date=ymd.getDate();
+			
+			var month=ymd.getMonth();
+			month++;
+			
+			var year=ymd.getFullYear();
+			
+			return date + " - " + month + " - " + year ;
+		}
+		
+	</script>
+</body>
+</head>
+</html>
