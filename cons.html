@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>simplefunction</title>
+<body>
+	<script>
+		function python(framework){
+			this.framework=framework,
+			this.version='5.2.0',
+			this.price=function(){
+				document.write(this.framework+"  "+this.version+"   "+ "Price is 50"+"<br>");
+			};
+		}
+		var webtool1=new python('Django');
+		var webtool2=new python('Flask');
+		webtool1.price();
+		webtool2.price();
+		
+	</script>
+</body>
+</head>
+</html>
