@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>simplefunction</title>
+<body>
+	<script>
+		function mobile(md){
+			return{
+				model:md,
+				price:function(){
+					return "Price is Rs.12,000";
+				}
+			};
+		}
+		var Samsung=mobile("G1");
+		document.write(Samsung.model+"  "+Samsung.price());
+	</script>
+</body>
+</head>
+</html>
