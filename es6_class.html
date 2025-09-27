@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>simplefunction</title>
+<body>
+	<script>
+	//After es6
+	
+	class Laptop{
+		constructor(model,price){
+			this.model=model;
+			this.price=price;
+			this.show=function(){
+				return (model+"  "+price);
+			};
+		}
+		display(){
+			document.write("Prototype member");
+		}
+	}
+	var asus=new Laptop("intel9",100000);
+	asus.display()
+	</script>
+</body>
+</head>
+</html>
