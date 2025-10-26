@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mydiv">
+
+    </div>
+    <input type="text" name="message" placeholder="Enter your text" />
+    <button id="btn" >Show text</button>
+    <script>
+        var h=document.querySelector('.mydiv');
+        var input=document.querySelector('input[name="message"]');
+        var b=document.querySelector("#btn");
+        b.addEventListener('click',(e)=>{
+            var value=input.value;
+            h.innerHTML=`<h1>${value}</h1>`
+        })
+    </script>
+</body>
+</html>
