@@ -11,13 +11,18 @@
     </div>
     <input type="text" name="message" placeholder="Enter your text" />
     <button id="btn" >Show text</button>
+    <button id="color-btn" >Change color</button>
     <script>
         var h=document.querySelector('.mydiv');
         var input=document.querySelector('input[name="message"]');
         var b=document.querySelector("#btn");
+        var cb=document.querySelector('#color-btn');
         b.addEventListener('click',(e)=>{
             var value=input.value;
             h.innerHTML=`<h1>${value}</h1>`
+        })
+        cb.addEventListener('click',(e)=>{
+            h.style.backgroundColor='red';
         })
     </script>
 </body>
