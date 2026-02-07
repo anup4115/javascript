@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>simplefunction</title>
+<body>
+	<script>
+		var Bike=function(){
+			this.model="bajaj";
+			this.price=400000;
+			
+		}
+		var dominar=new Bike();
+		Bike.prototype.color="Green";
+		for(var specs in dominar){
+			document.write(dominar[specs]);
+		}
+	</script>
+</body>
+</head>
+</html>
